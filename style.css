@@ -1,0 +1,459 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+html,body{
+          width: 100%;
+          height: 100%;
+}
+.page1{
+          width: 98.7vw;
+         height: 100vh;
+         background-color: black;
+         /* display: flex;
+         justify-content: center;
+         align-items: center; */
+         
+}
+.page1 .nav{
+          width: 98.7vw;
+          height: 12vh;
+          background-color: rgb(68, 67, 67);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 3vw;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          cursor: pointer;
+}
+.nav .nav-left:hover{
+          color: grey;
+          border-bottom: 1px solid white;
+}
+.nav .nav-right h3:hover{
+          color: grey;
+          border-bottom: 1px solid white;
+}
+.page1 .nav .nav-right{
+          width: 35vw;
+          display: flex;
+          justify-content: space-between;
+}
+.page1 .boll{
+          display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.page1 .boll ul{
+          display: flex;
+          border-bottom: 10px solid white;
+          margin-top: 50vh;
+}
+.page1 .boll ul li{
+          width: 10vw;
+          height: 22vh;
+          background-color: black;
+          list-style: none;
+          margin: 0 2vw;
+          border-radius: 20vw;
+          animation: bouncy 1s linear infinite;
+}
+@keyframes bouncy {
+          0%{transform: translateY(0);}
+          50%{transform: translateY(-150%);}
+          100%{transform: translateY(0);}
+          
+}
+.page1 .boll ul li:nth-child(1){
+          animation-delay: 0.2s;
+          background-color: pink;
+}
+.page1 .boll ul li:nth-child(2){
+          animation-delay: 0.6s;
+          background-color: blue;
+}
+.page1 .boll ul li:nth-child(3){
+          animation-delay: 0.4s;
+          background-color: orangered;
+}
+.page1 .boll  li:nth-child(4){
+          animation-delay: 0.5s;
+          background-color: aqua;
+}
+.page1 .boll ul li:nth-child(5){
+          animation-delay: 0.8s;
+          background-color: yellow;
+}
+.page2{
+          width: 98.7vw;
+          height: 100vh;
+          background-color: grey;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+}
+.page2 .left{
+          width: 45vw;
+          height: 90vh;
+          background-color: rgb(191, 181, 181);
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          border-radius: 2vw;
+          flex-direction: column;
+          line-height: 10vh;
+          cursor: pointer;
+          
+          
+
+}
+.page2 .left ul li{
+          list-style: none;
+          display: inline-block;
+          font-size: 7vw;
+          transition: all 1s linear;
+          text-shadow: 1px 2px 4px yellow;
+          
+}
+.page2 .left ul:hover li{
+          transform: translateY(-20vh);
+          rotate: 10deg;
+          filter: blur(2px);
+          opacity: 0;
+}
+.page2 .left ul li:nth-child(1){
+          transition-delay: 0s;
+}
+.page2 .left ul li:nth-child(2){
+          transition-delay: 0.2s;
+}
+.page2 .left ul li:nth-child(3){
+          transition-delay: 0.4s;
+}
+.page2 .left ul li:nth-child(4){
+          transition-delay: 0.8s;
+}
+.page2 .left ul li:nth-child(5){
+          transition-delay: 1.2s;
+}
+.page2 .left ul li:nth-child(6){
+          transition-delay: 1.4s;
+}
+.page2 .left ul li:nth-child(7){
+          transition-delay: 1.8s;
+}
+.page2 .left ul li:nth-child(8){
+          transition-delay: 2.2s;
+}
+.page2 .left ul li:nth-child(9){
+          transition-delay: 2.4s;
+}
+.page2 .left .co h1{
+           margin-bottom: 30vh;
+           text-shadow: 2px 5px 1px gray;
+           font-size: 2.5vw;
+}
+
+.right{
+          width: 45vw;
+          height: 90vh;
+          background-color: rgb(191, 181, 181);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2vw;
+
+
+}
+.right img{
+          width: 35vw;
+          height: 70vh;
+          cursor: pointer;
+          
+}
+@keyframes rounder {
+          0%{transform: rotate(0);}
+          25%{transform: rotate(-50deg);}
+          50%{transform: rotate(0);}
+          75%{transform: rotate(50deg);}
+          100%{transform: rotate(0);}
+}
+.right img:hover{
+          animation: rounder 5s linear;
+}
+.page3{
+          width: 98.7vw;
+          height: 100vh;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+.page3 .center{
+          width: 95vw;
+          height: 90vh;
+          background-color: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          filter: blur(0.7px);
+}
+.page3 .center1{
+          width: 90vw;
+          height: 85vh;
+          /* background-color: pink; */
+          background-image: url(image1.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          object-fit: cover;
+}
+@keyframes change {
+          0%{
+           background-image: url(image1.jpg);
+          }
+          20%{
+          background-image: url(image2.jpg);
+          }
+          40%{
+          background-image: url(image10.webp);
+          }
+          60%{
+          background-image: url(image4.jpg);
+          }
+          80%{
+          background-image: url(image5.jpg);
+          }
+          100%{
+          background-image: url(image1.jpg);
+          }
+          
+}
+.page3 .center1:hover{
+animation: change 20s linear;
+}
+
+.page4{
+          width: 98.7vw;
+          height: 100vh;
+          background-color: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+}
+.page4 .images{
+          display: flex;
+          width: 90vw ;
+          height: 90vh;
+          align-items: center;
+          justify-content:space-evenly;
+          background-color: rgb(35, 34, 34);
+}
+.page4 .images .img1{
+          width: 20vw;
+          height: 50vh ;
+          background: none;
+          background-position: center;
+          background-size: cover;
+          object-fit: cover;
+          overflow: hidden;
+}
+.page4 .images .img1 img{
+          transition: 0.5s;
+          width: 20vw;
+          height: 50vh ;
+}
+.page4 .images .img1 img:hover{
+          transform: scale(1.12);
+          cursor: pointer;
+}
+
+.page5{
+          width: 98.7vw;
+          height: 100vh;
+          background-color: grey;
+          border: 1px solid gray;
+          font-family: Arial, Helvetica, sans-serif;
+          
+
+}
+.page5 .last{
+          width: 98.7vw;
+          height: 45vh;
+          /* background-color: aqua; */
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 10vh;
+}
+.page5 .last img{
+          width: 30vw;
+          height: 45vh;
+          /* background-color: green; */
+          box-shadow: 5px 5px 5px rgb(199, 191, 191);
+}
+.page5 .last1{
+          width: 98.7vw;
+          height: 40vh;
+          /* background-color: blue; */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 10vw;
+}
+.page5 .last1 .last1-left{
+          width: 30vw;
+          height: 30;
+          /* background-color: red; */
+          font-size: 1.5vw;
+          padding: 0.5vw 1vw;
+          color: black;
+          font-weight: bold;
+         
+}
+.page5 .last1 .last1-right{
+          width: 20vw;
+          height: 13vw;
+          /* background-color: green; */
+          font-size: 2vw;
+          cursor: pointer;
+          
+}
+.page5 .last1 .last1-right i{
+          float: right;
+}
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    
+.page1 .nav{
+        width: 100%;
+}
+.page1 .nav-left{
+    font-size: 1vmax;
+}
+.page1 .nav .nav-right{
+    width: 60%;
+}
+.nav .nav-right h3{
+    font-size: 1.3vmax;
+}
+.page1 .boll ul li{
+    width: 15vw;
+    height: 10vh;
+}
+@keyframes bouncy {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-300%);}
+    100%{transform: translateY(0);}
+    
+}
+.page1 .boll ul li:nth-child(1){
+    animation-delay: 0.2s;
+    background-color: pink;
+}
+.page1 .boll ul li:nth-child(2){
+    animation-delay: 0.6s;
+    background-color: blue;
+}
+.page1 .boll ul li:nth-child(3){
+    animation-delay: 0.4s;
+    background-color: orangered;
+}
+.page1 .boll  li:nth-child(4){
+    animation-delay: 0.7s;
+    background-color: aqua;
+}
+.page1 .boll ul li:nth-child(5){
+    animation-delay: 0.10s;
+    background-color: yellow;
+}
+.page2{
+    flex-direction: column;
+}
+.page2 .left{
+    width: 80vw;
+    height: 45vh;
+    flex-direction: column;
+    line-height: 0vh;
+}
+.page2 .left ul li{
+    font-size: 10vw;
+    transform: translateY(-7vmax);
+}
+.page2 .left .co h1{
+     margin-bottom: 18vh;
+     font-size: 5vw;
+}
+.right{
+    width: 80vw;
+    height: 45vh;
+}
+.right img{
+    width: 70vw;
+    height: 40vh;
+}
+.page3 .center1{
+    width: 100%;
+    height: 45vh;
+}
+.page4 .images{
+    flex-wrap: wrap;
+}
+.page4 .images .img1{
+    width: 40vw;
+    height: 40vh ;
+}
+.page4 .images .img1 img{
+    width: 40vw;
+    height: 50vh ;
+}
+
+.page5 .last{
+    width: 98.7vw;
+    height: 45vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 10vh;
+}
+.page5 .last img{
+    width: 30vw;
+    height: 40vh;
+    /* background-color: green; */
+    box-shadow: 5px 5px 5px rgb(199, 191, 191);
+}
+.page5 .last1{
+    width: 98.7vw;
+    height: 45vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+.page5 .last1 .last1-left{
+    width: 40vw;
+    height: 20vh;
+    /* background-color: red; */
+    font-size: 3vw;
+    padding: 0.5vw 1vw;
+    color: black;
+    font-weight: bold;
+    line-height: 2vmax;
+    
+}
+.page5 .last1 .last1-right{
+    width: 35vw;
+    height: 30vw;
+    /* background-color: green; */
+    font-size: 4vw;
+}
+}
